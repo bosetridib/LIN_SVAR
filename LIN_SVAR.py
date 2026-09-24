@@ -5,10 +5,6 @@ import torch.nn as nn
 from statsmodels.tsa.vector_ar.vecm import VECM, select_coint_rank
 from sklearn.cluster import KMeans
 
-# Set random seed for reproducibility
-np.random.seed(42)
-torch.manual_seed(42)
-
 # =====================================================================
 # 1. DATA PREPROCESSING & ALIGNMENT (FRED-MD + NOAA CLIMATE DATA)
 # =====================================================================
